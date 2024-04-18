@@ -1,0 +1,52 @@
+:root {
+    --primaryColor: #4380c0;
+    --secondaryColor: #f1a81f;
+    --tertiaryColor: #f2f2f2;
+    --textColor: #ffffff;
+    --borderColor: #ddd;
+}
+
+.pagination-container {
+    width: 100%;
+    background-color: var(--tertiaryColor) ;
+    padding: 20px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: var(--primaryColor);
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid var(--borderColor);
+}
+
+.pagination a.active {
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+}
+
+.pagination a:hover:not(.active) {
+    background-color: var(--borderColor);
+}
+
+.pagination .prev,
+.pagination .next {
+    background-color: var(--tertiaryColor);
+    border: none;
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+    background-color: var(--borderColor);
+}
+
+@media screen and (max-width: 600px) {
+    .pagination a {
+        padding: 6px 12px;
+    }
+}

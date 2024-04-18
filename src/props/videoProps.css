@@ -1,0 +1,114 @@
+.video-container {
+    width: calc(25% - 45px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.video-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.video {
+    width: auto;
+    height: 160px;
+    transition: transform 0.3s;
+    margin-bottom: 10px;
+}
+
+.video-container:hover .video {
+    transform: scale(1.05);
+}
+
+.video-title {
+    font-size: 24px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.row-1 span,
+.row-2 span {
+    margin-left: 10px;
+}
+
+.uploader-download-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.uploader-info {
+    display: flex;
+    align-items: center;
+}
+
+.uploader-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.uploader-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.download-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* CSS rules for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .video-container {
+        width: calc(33% - 45px);
+    }
+}
+
+/* CSS rules for mobile devices */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .video-container {
+        width: calc(50% - 45px);
+    }
+
+    .video {
+        height: 185px;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+    .video-container {
+        width: calc(100% - 45px);
+    }
+
+    .video {
+        height: 250px;
+    }
+}

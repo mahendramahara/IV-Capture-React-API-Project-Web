@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# IV-Capture
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+IV-Capture is a mini React API project aimed the retrieval of images and videos based on user searches. It utilizes the Pixabay API to seamlessly fetch multimedia content, providing users with a smooth and intuitive browsing experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search Functionality:** Easily search for images and videos based on user-defined keywords.
+- **Pixabay API Integration:** Utilizes the Pixabay API to fetch a wide range of multimedia content.
+- **Responsive Design:** Ensures a seamless experience across various devices and screen sizes.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div style="display: flex; justify-content: space-between;">
+  <img src="images/demo/images-demo.png" alt="Images-Section" width="200"/>
+  <img src="images/demo/videos-demo.png" alt="Videos Section" width="200"/>
+  <img src="images/demo/copyright-demo.png" alt="Copyright-Section" width="200"/>
+  <img src="images/demo/about-demo.png" alt="About-Section" width="200"/>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/mahendramahara/IV-Capture-React-API-Project-Web.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd IV-Capture-React-API-Project-Web
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open your browser and visit `http://localhost:3000` to view the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact
+For any inquiries or suggestions, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/mahendramahara/).
 
-## Learn More
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to customize it further to suit your specific project needs!
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy Coding! 🚀

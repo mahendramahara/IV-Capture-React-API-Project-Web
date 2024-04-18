@@ -1,0 +1,46 @@
+.copyright-container {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.copyright-container h1 {
+    color: #333;
+    text-align: center;
+}
+
+.copyright-container h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+.copyright-container p {
+    color: #777;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.copyright-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.copyright-container a:hover {
+    text-decoration: underline;
+}
+
+.copyright-container button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copyright-container button:hover {
+    background-color: #0056b3;
+}

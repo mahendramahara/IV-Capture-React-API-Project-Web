@@ -1,0 +1,18 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.no-hits-warning{
+  margin: 20px auto;
+  text-align: center;
+  color: red;
+  font-size: 1.7em;
+}

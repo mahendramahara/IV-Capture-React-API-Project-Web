@@ -1,0 +1,142 @@
+:root {
+    --primaryColor: #4380c0;
+    --primaryColorDark: #03366d;
+    --secondaryColor: #f1a81f;
+    --clearColor: #dc3545;
+    --clearColorDark: #a31a28;
+    --tertiaryColor: #f2f2f2;
+    --textColor: #ffffff;
+    --borderColor: #ccc;
+    --iconColor: #aaa;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 70%; 
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    color: var(--iconColor);
+}
+
+.search-button,
+.clear-button {
+    flex: 1;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-button {
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+}
+
+.search-button:hover {
+    background-color: var(--primaryColorDark);
+}
+
+.clear-button {
+    background-color: var(--clearColor) ;
+    color: var(--textColor);
+}
+
+.clear-button:hover {
+    background-color: var(--clearColorDark);
+}
+
+/* CSS rules for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .search-container {
+        margin-top: 15px;
+    }
+
+    .search-input-container {
+        width: 70%; 
+    }
+}
+
+/* CSS rules for mobile devices */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .search-container {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input-container {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .button-wrapper {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search-button,
+    .clear-button {
+        width: 40%;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+    .search-container {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input-container {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .button-wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search-button,
+    .clear-button {
+        width: 35%;
+    }
+}

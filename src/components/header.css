@@ -1,0 +1,129 @@
+:root {
+    --primaryColor: #4380c0;
+    --secondaryColor: #f1a81f;
+    --tertiaryColor: rgba(0, 0, 0, 0.5);
+    --textColor: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondaryColor);
+}
+
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* CSS rules for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 5px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    .profile img {
+        width: 30px;
+    }
+}
+
+
+/* CSS rules for mobile devices */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    header {
+        padding: 5px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .profile img {
+        width: 25px;
+    }
+
+    nav.active ul {
+        display: block;
+    }
+
+    nav.active ul li {
+        margin: 10px 0;
+    }
+
+    nav.active ul li a {
+        font-size: 1em;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+    header {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .profile img {
+        width: 25px;
+    }
+
+    nav.active ul {
+        display: block;
+    }
+
+    nav.active ul li {
+        margin: 10px 0;
+    }
+
+    nav.active ul li a {
+        font-size: 1em;
+    }
+}
